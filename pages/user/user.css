@@ -1,0 +1,101 @@
+.header{
+    background-color: transparent !important;
+}
+
+.navbar-view {
+    position: fixed;
+    background-color: transparent !important;
+}
+
+.navbar-view a {
+    font-size: 36px;
+    margin: 5px;
+    font-family: "Pattaya", sans-serif;
+    text-align: center;
+
+}
+
+.navbar-view i {
+    font-size: 35px;
+
+}
+
+.dropdown {
+    margin-top: 1%;
+}
+
+.dropdown button {
+    border: none;
+}
+
+.dropdown-item {
+    font-family: var(--font-writing-info);
+    font-size: 20px !important;
+    text-align: start !important;
+    font-weight: 500 !important;
+}
+
+.d-lg-flex button {
+    border: none !important;
+}
+
+/* .offcanvas {
+    width: 35% !important;
+} */
+
+.nav-link {
+    font-size: 15px !important;
+    font-family: var(--font-writing-info);
+    font-weight: 500 !important;
+    text-align: start !important;
+}
+
+.dropdown-menu {
+    border: none !important;
+}
+
+.dropdown-item {
+    font-size: 15px !important;
+}
+
+/* section */
+.user-section{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+}
+.user-body{
+    position: relative;
+    margin: 0 auto;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    
+   
+}
+.user-infoBody{
+    position: relative;
+    margin: 0 auto;
+    background-color: #FBBC04;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+}
+.userImg{
+    position: relative;
+    top: 0.5rem;
+    z-index: 1000;
+}
+.user-title{
+    text-align: center;
+}
+
+.logoUser{
+    width: 100px !important;
+    margin-top: 15px;
+}

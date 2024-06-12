@@ -1,0 +1,171 @@
+*{
+    font-family: 'Pattaya';
+}
+body{
+    min-height: 100vh !important;
+}
+
+.bg-yellow {
+    background-color: #ffbf00;
+    height: 100vh;
+}
+
+.col-md-6-senha img{
+    width: 200px !important;
+    height: 200px !important;
+    margin-left: 20% !important;
+}
+/* alteração 22/05 */
+.fundo-img img{
+    width: 680px;
+}
+/* fim alteração */
+/* alteração dia 29/05 */
+.form-control{
+    border: none !important;
+    outline: none !important;
+    background-color: transparent !important;
+    font-family: 'Montsserrat' , sans-serif;
+    text-align: left;
+}
+.form-control :hover{
+    border: none !important;
+}
+
+/* fim da alteração */
+.bg-white {
+    background-color: #ffffff;
+}
+
+.direito h2{
+    position: relative !important;
+    margin: 14rem 0 2rem 0 !important;
+    justify-content: center !important;
+    text-align: center !important;
+    text-align: center !important;
+    /* margin: 34% 0 0 0 ; */
+    
+    font-size: 54px;
+}
+
+.changePassword-dad{
+    position: relative;
+    width: 100% !important;
+    display: flex!important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center !important;
+    font-family: 'Montserrat' !important;
+}
+.changePassword-dad button{
+    background-color: #ffffff !important;
+    margin-top: 3%;
+    width: 45% !important;
+    /* height: 30px; */
+    font-size: 20px !important;
+    font-weight:800;
+    border-radius: 0 !important;
+}
+
+.changePassword-dad div{
+    width: 50% !important;
+}
+
+.mb-3-senha{
+    text-align: center !important;
+}
+.form-control-mudarSenha:focus {
+
+    border-color: transparent;
+    box-shadow: none;
+    background-color: transparent;
+}
+
+.mb-3-senha input{
+    width: 110% !important;
+    margin-top: 20px;
+    background-color: #ffbf00;
+    border: #000000 solid 1px !important; 
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-radius: 0 !important;
+   
+}
+
+.mb-3-senha ::placeholder{
+    color: #000000 !important;
+    background-color: #00000000;
+    float: left;
+    font-family: 'Montserrat' !important;
+}
+.voltar{
+    text-decoration: none;
+    color: #000000;
+    margin-top: 10px;
+}
+@media (max-width: 767.98px) {
+   .order-md-1,.order-md-2,.order-md-3 {
+        width: 100%;
+    }
+   .order-md-3 {
+        order: 1;
+    }
+   .order-md-2 {
+        order: 2;
+
+    }
+   .order-md-1 {
+        order: 3;
+    }
+   .col-md-6-mudarSenha{
+    display: none !important;
+   }
+
+   
+.mb-3-senha input{
+    width: 100% !important;
+    background-color: #ffbf0000;
+    border: #000000 solid 1px !important; 
+    border-top: none !important;
+    border-left: none !important;
+    margin-right: 60px;
+    border-right: none !important;
+    border-radius: none !important;
+    margin-top: 20px;
+}
+
+/* frase em baixo */
+.voltar{
+    text-decoration: none;
+    color: #000000;
+    margin-top: 30px;
+}
+
+/* bottom mudar */
+.changePassword-dad button{
+    margin-top: 1%;
+    width: 45% !important;
+    /* height: 30px; */
+    font-size: 20px !important;
+    font-weight:800;
+    border-radius: 0 !important;
+    margin-top: 20px;
+}
+
+
+
+.direito h2{
+    position: relative !important;
+    /* margin: 14rem 0 2rem 0 !important; */
+    justify-content: center !important;
+    text-align: center !important;
+    /* margin: 34% 0 0 0 ; */
+    float: none;
+    margin-top: 190px !important;
+    font-size: 44px;
+    
+}
+
+}

@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pattaya&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pattaya&family=Righteous&display=swap');
+
+.login-content {
+  position: relative;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+}
+
+.content-login {
+  align-items: center;
+  text-align: center;
+  width: 65% !important;
+  padding: 30px;
+  text-align: center;
+}
+
+.content-login input {
+  border: none !important;
+  border-bottom: 1px solid black !important;
+  outline: none !important;
+  width: 70% !important;
+  padding: 10px !important;  
+}
+
+.mb-3-login {
+  font-family: " Montserrat ", sans-serif !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center;
+  text-align: start;
+  
+}
+
+.alLabel {
+  font-family: "Montserrat", sans-serif !important;
+  text-align: left !important;
+}
+
+.login-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.login-manssage{
+  color:rgba(255, 0, 0, 0.5);
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 800;
+}
+
+.more-information {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+.link-info {
+  text-decoration: none !important;
+  font-family: "Montserrat", sans-serif !important;
+  font-size: 15px;
+  margin-bottom: 25px;
+  margin-left: 10px;
+  
+}
+
+.final-login {
+  display: flex;
+}
+
+.buttonDark {
+  --bs-btn-color: #FBBC04 !important;
+  background-color: black;
+  width: 50% !important;
+}
+
+.buttonDark { 
+  --bs-btn-font-family: "Righteous", sans-serif !important;
+  --bs-btn-border-radius: none !important;
+}
+
+.blackbox {
+  position: relative;
+  background-color: black !important;
+  width: 30%;
+  height: 100vh;
+}
+
+.login-img {
+  position: relative;
+  left: 5rem;
+  z-index: 1000 !important;
+  border-radius: 10px;
+
+
+}
+
+.nav-icons {
+  display: flex;
+  font-size: 30px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.i2 {
+  margin-left: 10px
+}
+
+@media screen and (max-width: 920px) {
+  .login-img{
+    width: 350px;
+  }
+  .content-login{
+    width: 100% !important;
+  }
+  .content-login input {
+    width: 100% !important;
+  }
+  .buttonDark {
+
+    width: 85% !important;
+    
+  }
+ 
+  .more-information{
+    flex-direction: column;
+    margin: 30px;
+  }
+}
+@media screen and (max-width: 730px) {
+  .more-information{
+    flex-direction: column;
+    margin: 30px;
+  }
+  .content-login{
+    margin-top: 5rem;
+  }
+  .login-img{
+    display: none;
+  }
+  .blackbox{
+    display: none;
+  }
+  .buttonDark {
+
+    width: 85% !important;
+    
+  }
+  .nav-icons{
+    margin: 20px;
+  }
+  
+}

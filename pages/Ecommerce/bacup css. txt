@@ -1,0 +1,1260 @@
+.orange-container {
+  background-color: #FBBC04;
+  padding: 20px;
+  margin: 0 20px;
+  /* Margem nos lados */
+  display: flex;
+
+}
+
+.centered-image{
+  width: 100% !important;
+  text-align: center !important;
+  align-items: center !important;
+  margin-top: 30px !important;
+}
+
+.body-Cart {
+  margin-top: 0px !important;
+}
+
+.image-menina {
+  width: 300px;
+  height: auto;
+  margin-top: 40px;
+  /* Ajusta a posição vertical */
+  margin-left: 30%;
+  /* Ajusta a posição horizontal */
+  margin-right: 100px;
+
+}
+
+.space-above {
+  margin-top: 60px;
+  /* Aumenta o espaçamento acima dos textos */
+  padding-left: 100px;
+}
+
+
+.pattaya-text {
+  font-family: Pattaya;
+  color: white;
+  font-size: 55px;
+}
+
+.montserrat-text {
+  font-family: 'Montserrat', sans-serif;
+  /* Usando Montserrat como fonte */
+  color: rgb(0, 0, 0);
+  /* Definindo a cor do texto como preto */
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* BOLAS */
+
+.colorful-background {
+  background-image: url('../Ecommerce/img/back-ball.png');
+  /* URL da sua imagem de bolas */
+  background-size: 75%;
+  padding: 20px;
+  margin: 0 20px;
+  /* Margem nos lados */
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 128vh;
+  z-index: 1;
+
+}
+
+.overlay-content {
+  position: absolute;
+  /* Define a posição absoluta para que os elementos fiquem sobrepostos à imagem */
+  top: 100%;
+  /* Define a posição verticalmente central */
+  left: 50%;
+  /* Define a posição horizontalmente central */
+  transform: translate(-50%, -50%);
+  /* Move o conteúdo para o centro */
+  text-align: center;
+  /* Alinha o texto ao centro */
+}
+
+
+.overlay-title-righteous {
+  font-family: Righteous, sans-serif;
+  /* Define a fonte Righteous */
+  font-weight: bold;
+  /* Deixa o texto em negrito */
+  font-size: 35px;
+  /* Tamanho da fonte */
+}
+
+.overlay-text-montserrat {
+  font-family: Montserrat, sans-serif;
+  /* Define a fonte Montserrat */
+  font-size: 25px;
+  /* Tamanho da fonte */
+  padding: 50px;
+}
+
+.buttons {
+  margin-top: 100px;
+  /* Espaço entre os textos e os botões */
+}
+
+.saiba-mais-button,
+.comprar-button {
+  font-family: 'Righteous', sans-serif;
+  color: white;
+  background-color: #8E5915;
+  border: none;
+  padding: 10px 20px;
+  margin-right: 20px;
+  /* Espaço entre os botões */
+  cursor: pointer;
+  border-radius: 7%;
+}
+
+.saiba-mais-button:hover,
+.comprar-button:hover {
+  background-color: #63420A;
+  /* Cor do botão ao passar o mouse */
+}
+
+.image-menino {
+  width: 30%;
+  height: auto;
+  margin-top: auto !important;
+  /* Ajusta a posição vertical */
+  margin-left: auto !important;
+  /* Ajusta a posição horizontal */
+}
+
+.centered-image {
+  top: -80px;
+  position: relative;
+  width: 60%;
+}
+
+.carousel-section {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  z-index: 1;
+}
+
+.carousel-section img{
+  width: 30% !important;
+}
+
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.slide {
+  display: none;
+  width: 70%;
+}
+
+.slide.active {
+  display: block;
+}
+
+.prev,
+.next {
+  /* Mudança para posição fixa */
+  bottom: 20px;
+  /* Distância da parte inferior da página */
+  width: 70px;
+  /* Largura dos botões */
+  height: 70px;
+  /* Altura dos botões */
+  background-color: #FBBC04;
+  border-radius: 50%;
+  /* Torna os botões redondos */
+  border: none;
+  cursor: pointer;
+}
+
+.prev i,
+.next i {
+  color: #000000;
+  font-size: 20px !important;
+  /* Tamanho do ícone */
+  margin-top: 5px !important;
+}
+
+.buy-button-container {
+  text-align: center;
+  padding-top: 250px;
+  /* Ajuste conforme necessário */
+}
+
+.buy-button {
+  background-color: #E4BA67;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 50%;
+  /* Torna o botão redondo */
+  padding: 20px 30px;
+  /* Ajuste conforme necessário */
+  font-size: 30px;
+  /* Ajuste conforme necessário */
+  cursor: pointer;
+  font-family: 'Montserrat';
+  font-weight: bold;
+}
+
+
+.buy-button:hover {
+  background-color: #63420A;
+  /* Cor do botão ao passar o mouse */
+}
+
+#footer {
+  background: #f7f7f7;
+  padding: 1rem;
+  /* padding-top: 5rem; */
+  background-color: #63420A;
+}
+
+#footer a {
+  text-decoration: none;
+}
+
+#footer2 {
+  background: #f7f7f7;
+  padding: 3rem;
+  margin-top: 0px;
+  /* padding-top: 5rem; */
+  padding-top: 7rem;
+  padding-bottom: 80px;
+  background-color: #8E5915;
+}
+
+.social-links {
+  color: white;
+
+}
+
+.logoHome {
+  text-align: center !important;
+}
+
+.logo-footer {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-top: 25% !important;
+}
+
+.social-links h2 {
+  padding-bottom: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+}
+
+.social-links img {
+  padding-bottom: 25px;
+}
+
+.social-icons {
+  /* display: flex;
+    gap: 3rem; */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: white;
+}
+
+.social-icons a {
+  color: white;
+}
+
+.social-icons a:hover {
+  color: white;
+}
+
+.social-icons a i {
+  padding: 0.4rem 1rem 0.4rem 1rem;
+  border-radius: 3px;
+  color: #ffffff;
+  font-size: 16px;
+  margin-right: 12px;
+}
+
+li {
+  list-style: none;
+}
+
+.useful-link h2 {
+  padding-bottom: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+}
+
+.useful-link img {
+  padding-bottom: 15px;
+}
+
+.use-links {
+  line-height: 32px;
+}
+
+.use-links li i {
+  font-size: 14px;
+  padding-right: 8px;
+  color: white;
+}
+
+.use-links li a {
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+}
+
+.address h2 {
+  padding-bottom: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+}
+
+.address img {
+  padding-bottom: 15px;
+}
+
+.address-links li a {
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+
+}
+
+.address-links li i {
+  font-size: 16px;
+  padding-right: 8px;
+  color: white;
+
+}
+
+.address-links li i:nth-child(1) {
+  padding-top: 9px;
+}
+
+.address-links .address1 {
+  font-weight: 500;
+  font-size: 15px;
+  display: flex;
+}
+
+.address-links {
+  line-height: 32px;
+  color: white;
+}
+
+.copy-right-sec {
+  padding: 1.8rem;
+  background: #8E5915;
+  color: #fff;
+  text-align: center;
+}
+
+.copy-right-sec a {
+  color: #fcd462;
+  font-weight: 500;
+}
+
+
+.copy-right-sec {
+  display: flex !important;
+}
+
+.itemsCopy {
+  display: flex !important;
+  margin: auto !important;
+}
+
+.itemsCopy i {
+  font-size: 10px !important;
+}
+
+.itemsCopy p {
+  margin-left: 5px !important;
+  margin-right: 5px !important;
+}
+
+.prev{
+  margin-right: 10px !important;
+}
+
+@media screen and (max-width: 1300px) {
+
+  .colorful-background {
+    background-image: url('../Ecommerce/img/back-ball.png');
+    /* URL da sua imagem de bolas */
+    background-size: 90%;
+    padding: 20px;
+    margin: 0 15px;
+    /* Margem nos lados */
+    background-repeat: no-repeat;
+    height: 135vh;
+    z-index: 1;
+
+  }
+
+  .orange-container {
+    flex-direction: column-reverse;
+    /* Inverte a direção da coluna */
+    align-items: center;
+    /* Centraliza os itens na coluna */
+    padding: 20px 10px;
+    /* Ajusta o preenchimento */
+  }
+
+  .image-menina {
+    width: 40%;
+    /* Reduz a largura da imagem */
+    margin: 20px 0;
+    /* Ajusta a margem */
+  }
+
+  .pattaya-text {
+    font-family: Pattaya;
+    color: white;
+    font-size: 55px;
+  }
+
+  .montserrat-text {
+    font-size: 22px;
+    padding: 5;
+    margin: 5px;
+  }
+
+  .overlay-title-righteous {
+    font-family: Righteous, sans-serif;
+    /* Define a fonte Righteous */
+    font-weight: bold;
+    /* Deixa o texto em negrito */
+    font-size: 35px;
+    /* Tamanho da fonte */
+    margin-top: 550px;
+  }
+
+  .overlay-text-montserrat {
+    font-family: Montserrat, sans-serif;
+    /* Define a fonte Montserrat */
+    font-size: 25px;
+    /* Tamanho da fonte */
+    padding: 30px;
+  }
+
+  .space-above {
+    margin-top: 50px;
+    /* Reduz o espaçamento acima dos textos */
+    text-align: center;
+    /* Centraliza o texto */
+    padding-left: 0;
+    /* Remove o preenchimento à esquerda */
+  }
+
+  .overlay-content {
+    padding: 20px;
+    /* Ajusta o preenchimento */
+  }
+
+  .overlay-content {
+    position: relative;
+    /* Define a posição absoluta para que os elementos fiquem sobrepostos à imagem */
+    top: 10%;
+    /* Define a posição verticalmente central */
+    left: 50%;
+    /* Define a posição horizontalmente central */
+    transform: translate(-50%, -50%);
+    /* Move o conteúdo para o centro */
+    text-align: center;
+    /* Alinha o texto ao centro */
+  }
+
+  .buttons {
+    margin-top: 100px;
+    /* Reduz o espaçamento entre os botões */
+    display: flex;
+    /* Coloca os botões em uma linha */
+    flex-direction: column;
+    /* Ajusta a direção para coluna */
+    align-items: center;
+    /* Centraliza os botões */
+  }
+
+  .saiba-mais-button,
+  .comprar-button {
+    margin-bottom: 10px;
+    /* Adiciona espaço entre os botões */
+  }
+
+  .menino-img {
+    text-align: center;
+    /* Centraliza o conteúdo */
+  }
+
+
+
+  .carousel-section {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    z-index: 1;
+  }
+
+
+  .carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .slide {
+    display: none;
+    width: 70%;
+  }
+
+  .slide.active {
+    display: block;
+  }
+
+  .prev,
+  .next {
+    /* Mudança para posição fixa */
+    bottom: 20px;
+    /* Distância da parte inferior da página */
+    width: 50px;
+    /* Largura dos botões */
+    height: 50px;
+    /* Altura dos botões */
+    background-color: #FBBC04;
+    border-radius: 50%;
+    /* Torna os botões redondos */
+    border: none;
+    cursor: pointer;
+  }
+
+  .prev i,
+  .next i {
+    color: #000000;
+    font-size: 30px;
+    /* Tamanho do ícone */
+  }
+
+  .buy-button-container {
+    padding-top: 230px;
+    /* Ajusta o preenchimento */
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+
+  .colorful-background {
+    background-image: url('../Ecommerce/img/back-ball.png');
+    /* URL da sua imagem de bolas */
+    background-size: 100%;
+    padding: 20px;
+    margin: 0 5px;
+    /* Margem nos lados */
+    background-repeat: no-repeat;
+    height: 90vh;
+    z-index: 1;
+
+  }
+
+  .WIDTH {
+    width: auto !important;
+    display: flex;
+    margin: auto !important;
+  }
+
+
+
+  .localHome {
+    display: none !important;
+  }
+
+  .orange-container {
+    flex-direction: column-reverse;
+    /* Inverte a direção da coluna */
+    align-items: center;
+    /* Centraliza os itens na coluna */
+    padding: 20px 10px;
+    /* Ajusta o preenchimento */
+  }
+
+  .image-menina {
+    width: 40%;
+    /* Reduz a largura da imagem */
+    margin: 20px 0;
+    /* Ajusta a margem */
+  }
+
+  .pattaya-text {
+    font-family: Pattaya;
+    color: white;
+    font-size: 40px;
+  }
+
+  .montserrat-text {
+    font-size: 15px;
+    padding: 5;
+    margin: 5px;
+  }
+
+  .overlay-title-righteous {
+    font-family: Righteous, sans-serif;
+    /* Define a fonte Righteous */
+    font-weight: bold;
+    /* Deixa o texto em negrito */
+    font-size: 30px;
+    /* Tamanho da fonte */
+    margin-top: 100px;
+  }
+
+  .overlay-text-montserrat {
+    font-family: Montserrat, sans-serif;
+    /* Define a fonte Montserrat */
+    font-size: 20px;
+    /* Tamanho da fonte */
+    padding: 30px;
+  }
+
+  .space-above {
+    margin-top: 20px;
+    /* Reduz o espaçamento acima dos textos */
+    text-align: center;
+    /* Centraliza o texto */
+    padding-left: 0;
+    /* Remove o preenchimento à esquerda */
+  }
+
+  .overlay-content {
+    padding: 20px;
+    /* Ajusta o preenchimento */
+  }
+
+  .overlay-content {
+    position: relative;
+    /* Define a posição absoluta para que os elementos fiquem sobrepostos à imagem */
+    top: 40%;
+    /* Define a posição verticalmente central */
+    left: 50%;
+    /* Define a posição horizontalmente central */
+    transform: translate(-50%, -50%);
+    /* Move o conteúdo para o centro */
+    text-align: center;
+    /* Alinha o texto ao centro */
+  }
+
+  .buttons {
+    margin-top: 20px;
+    /* Reduz o espaçamento entre os botões */
+    display: flex;
+    /* Coloca os botões em uma linha */
+    flex-direction: column;
+    /* Ajusta a direção para coluna */
+    align-items: center;
+    /* Centraliza os botões */
+  }
+
+  .saiba-mais-button,
+  .comprar-button {
+    margin-bottom: 40px;
+    /* Adiciona espaço entre os botões */
+  }
+
+  .menino-img {
+    text-align: center;
+    /* Centraliza o conteúdo */
+  }
+
+
+
+  .carousel-section {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    z-index: 1;
+  }
+
+
+  .carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .slide {
+    display: none;
+    width: 70%;
+  }
+
+  .slide.active {
+    display: block;
+  }
+
+  .prev,
+  .next {
+    /* Mudança para posição fixa */
+    bottom: 20px;
+    /* Distância da parte inferior da página */
+    width: 50px;
+    /* Largura dos botões */
+    height: 50px;
+    /* Altura dos botões */
+    background-color: #FBBC04;
+    border-radius: 50%;
+    /* Torna os botões redondos */
+    border: none;
+    cursor: pointer;
+  }
+
+  .prev i,
+  .next i {
+    color: #000000;
+    font-size: 30px;
+    /* Tamanho do ícone */
+  }
+
+
+  .buy-button-container {
+    padding-top: 100px;
+    /* Ajusta o preenchimento */
+  }
+
+  #footer {
+    /* Ajusta o preenchimento superior */
+    padding-bottom: 20px;
+    /* Ajusta o preenchimento inferior */
+    flex-direction: row;
+    display: flex;
+  }
+
+  .logo-footer {
+    display: block;
+  }
+
+  .social-links,
+  .useful-link,
+  .address {
+    text-align: center;
+    /* Centraliza o conteúdo */
+    margin-bottom: 20px;
+    /* Adiciona espaço entre os elementos */
+  }
+
+  .social-icons,
+  .use-links,
+  .address-links {
+    display: flex;
+    /* Coloca os itens em uma linha */
+    flex-direction: column;
+    /* Ajusta a direção para coluna */
+    align-items: center;
+    /* Centraliza os itens na coluna */
+  }
+
+  .copy-right-sec {
+    padding: 1rem;
+    /* Ajusta o preenchimento */
+  }
+
+  .address {
+    display: none;
+  }
+
+  .carousel-section img{
+    width: 40% !important;
+  }
+
+  .image-menino {
+    width: 40%;
+    height: auto;
+    margin-top: auto !important;
+    /* Ajusta a posição vertical */
+    margin-left: auto !important;
+    /* Ajusta a posição horizontal */
+  }
+  
+}
+
+@media screen and (max-width: 600px) {
+
+  .colorful-background {
+    background-image: url('../Ecommerce/img/back-ball.png');
+    /* URL da sua imagem de bolas */
+    background-size: 100%;
+    padding: 20px;
+    margin: 0 5px;
+    /* Margem nos lados */
+    background-repeat: no-repeat;
+    height: 70vh;
+    z-index: 1;
+
+  }
+
+  .logoDiv {
+    display: none !important;
+  }
+
+  .orange-container {
+    flex-direction: column-reverse;
+    /* Inverte a direção da coluna */
+    align-items: center;
+    /* Centraliza os itens na coluna */
+    padding: 20px 10px;
+    /* Ajusta o preenchimento */
+  }
+
+  .image-menina {
+    width: 40%;
+    /* Reduz a largura da imagem */
+    margin: 20px 0;
+    /* Ajusta a margem */
+  }
+
+  .pattaya-text {
+    font-family: Pattaya;
+    color: white;
+    font-size: 40px;
+  }
+
+  .montserrat-text {
+    font-size: 15px;
+    padding: 5;
+    margin: 5px;
+  }
+
+  .overlay-title-righteous {
+    font-family: Righteous, sans-serif;
+    /* Define a fonte Righteous */
+    font-weight: bold;
+    /* Deixa o texto em negrito */
+    font-size: 30px;
+    /* Tamanho da fonte */
+    margin-top: 70px;
+  }
+
+  .overlay-text-montserrat {
+    font-family: Montserrat, sans-serif;
+    /* Define a fonte Montserrat */
+    font-size: 17px;
+    /* Tamanho da fonte */
+    padding: 30px;
+    word-wrap: break-word;
+  }
+
+  .space-above {
+    margin-top: 20px;
+    /* Reduz o espaçamento acima dos textos */
+    text-align: center;
+    /* Centraliza o texto */
+    padding-left: 0;
+    /* Remove o preenchimento à esquerda */
+  }
+
+  .overlay-content {
+    padding: 20px;
+    /* Ajusta o preenchimento */
+  }
+
+  .overlay-content {
+    position: relative;
+    /* Define a posição absoluta para que os elementos fiquem sobrepostos à imagem */
+    top: 40%;
+    /* Define a posição verticalmente central */
+    left: 50%;
+    /* Define a posição horizontalmente central */
+    transform: translate(-50%, -50%);
+    /* Move o conteúdo para o centro */
+    text-align: center;
+    /* Alinha o texto ao centro */
+  }
+
+  .buttons {
+    margin-top: 20px;
+    /* Reduz o espaçamento entre os botões */
+    display: flex;
+    /* Coloca os botões em uma linha */
+    flex-direction: column;
+    /* Ajusta a direção para coluna */
+    align-items: center;
+    /* Centraliza os botões */
+  }
+
+  .saiba-mais-button,
+  .comprar-button {
+    margin-bottom: 10px;
+    /* Adiciona espaço entre os botões */
+  }
+
+  .menino-img {
+    text-align: center;
+    /* Centraliza o conteúdo */
+    padding-top: 60px;
+  }
+
+
+
+  .carousel-section {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    z-index: 1;
+  }
+
+
+  .carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .slide {
+    display: none;
+    width: 70%;
+  }
+
+  .slide.active {
+    display: block;
+  }
+
+  .prev,
+  .next {
+    /* Mudança para posição fixa */
+    bottom: 20px;
+    /* Distância da parte inferior da página */
+    width: 50px;
+    /* Largura dos botões */
+    height: 50px;
+    /* Altura dos botões */
+    background-color: #FBBC04;
+    border-radius: 50%;
+    /* Torna os botões redondos */
+    border: none;
+    cursor: pointer;
+  }
+
+  .faleConosco {
+    width: 45% !important;
+  }
+
+  .linksHome {
+    width: 45% !important;
+  }
+
+  .prev i,
+  .next i {
+    color: #000000;
+    font-size: 30px;
+    /* Tamanho do ícone */
+  }
+
+  .buy-button-container {
+    padding-top: 100px;
+    /* Ajusta o preenchimento */
+  }
+
+  #footer {
+    /* Ajusta o preenchimento superior */
+    padding-bottom: 20px;
+    /* Ajusta o preenchimento inferior */
+    flex-direction: row;
+    display: flex;
+  }
+
+  .col-md-3 {
+    width: auto !important;
+
+  }
+
+  .logo-footer {
+    display: none;
+  }
+
+  .social-links,
+  .useful-link,
+  .address {
+    text-align: center;
+    /* Centraliza o conteúdo */
+    margin-bottom: 20px;
+    /* Adiciona espaço entre os elementos */
+  }
+
+  .social-icons,
+  .use-links,
+  .address-links {
+    display: flex;
+    /* Coloca os itens em uma linha */
+    flex-direction: column;
+    /* Ajusta a direção para coluna */
+    align-items: center;
+    /* Centraliza os itens na coluna */
+  }
+
+  .copy-right-sec {
+    padding: 1rem;
+    /* Ajusta o preenchimento */
+  }
+
+  .address {
+    display: none;
+  }
+
+  .prev i,
+  .next i {
+    color: #000000;
+    font-size: 20px !important;
+    /* Tamanho do ícone */
+    margin-top: 10px !important;
+  }
+
+  .carousel-section img{
+    width: 50% !important;
+  }
+
+  .image-menino {
+    width: 50%;
+    height: auto;
+    margin-top: auto !important;
+    /* Ajusta a posição vertical */
+    margin-left: auto !important;
+    /* Ajusta a posição horizontal */
+  }
+  
+}
+
+@media screen and (max-width: 400px) {
+
+  .colorful-background {
+    background-image: url('../Ecommerce/img/back-ball.png');
+    /* URL da sua imagem de bolas */
+    background-size: 100%;
+    padding: 10px;
+    margin: 0 5px;
+    /* Margem nos lados */
+    background-repeat: no-repeat;
+    height: 80vh;
+    z-index: 1;
+
+  }
+
+  .orange-container {
+    flex-direction: column-reverse;
+    /* Inverte a direção da coluna */
+    align-items: center;
+    /* Centraliza os itens na coluna */
+    padding: 20px 10px;
+    /* Ajusta o preenchimento */
+  }
+
+  .image-menina {
+    width: 40%;
+    /* Reduz a largura da imagem */
+    margin: 20px 0;
+    /* Ajusta a margem */
+  }
+
+  .pattaya-text {
+    font-family: Pattaya;
+    color: white;
+    font-size: 40px;
+  }
+
+  .montserrat-text {
+    font-size: 15px;
+    padding: 5;
+    margin: 5px;
+  }
+
+  .overlay-title-righteous {
+    font-family: Righteous, sans-serif;
+    /* Define a fonte Righteous */
+    font-weight: bold;
+    /* Deixa o texto em negrito */
+    font-size: 20px;
+    /* Tamanho da fonte */
+    margin-top: 90px;
+  }
+
+  .overlay-text-montserrat {
+    font-family: Montserrat, sans-serif;
+    /* Define a fonte Montserrat */
+    font-size: 17px;
+    /* Tamanho da fonte */
+    padding: 30px;
+  }
+
+  .space-above {
+    margin-top: 20px;
+    /* Reduz o espaçamento acima dos textos */
+    text-align: center;
+    /* Centraliza o texto */
+    padding-left: 0;
+    /* Remove o preenchimento à esquerda */
+  }
+
+  .overlay-content {
+    padding: 20px;
+    /* Ajusta o preenchimento */
+  }
+
+  .buttons {
+    margin-top: 20px;
+    /* Reduz o espaçamento entre os botões */
+    display: flex;
+    /* Coloca os botões em uma linha */
+    flex-direction: column;
+    /* Ajusta a direção para coluna */
+    padding-left: 20px;
+  }
+
+  .saiba-mais-button,
+  .comprar-button {
+    margin-bottom: 10px;
+    /* Adiciona espaço entre os botões */
+  }
+
+  .menino-img {
+    text-align: center;
+    /* Centraliza o conteúdo */
+    padding-top: 60px;
+  }
+
+  .carousel-section {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    z-index: 1;
+  }
+
+
+  .carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .slide {
+    display: none;
+    width: 70%;
+  }
+
+  .slide.active {
+    display: block;
+  }
+
+  .prev,
+  .next {
+    /* Mudança para posição fixa */
+    bottom: 20px;
+    /* Distância da parte inferior da página */
+    width: 40px;
+    /* Largura dos botões */
+    height: 40px;
+    /* Altura dos botões */
+    background-color: #FBBC04;
+    border-radius: 50%;
+    /* Torna os botões redondos */
+    border: none;
+    cursor: pointer;
+  }
+
+  .prev i,
+  .next i {
+    color: #000000;
+    font-size: 25px;
+    /* Tamanho do ícone */
+  }
+
+  .buy-button-container {
+    padding-top: 80px;
+    /* Ajusta o preenchimento */
+  }
+
+  .overlay-content {
+    position: relative;
+    /* Define a posição absoluta para que os elementos fiquem sobrepostos à imagem */
+    top: 40%;
+    /* Define a posição verticalmente central */
+    left: 50%;
+    /* Define a posição horizontalmente central */
+    transform: translate(-50%, -50%);
+    /* Move o conteúdo para o centro */
+    text-align: center;
+    /* Alinha o texto ao centro */
+  }
+
+  .itemsCopy i {
+    font-size: 10px !important;
+  }
+
+  .itemsCopy p {
+    font-size: 13px !important;
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+  }
+
+  .itemsCopy a {
+    font-size: 13px !important;
+  }
+
+
+}
+
+@media (max-width: 350px) {
+
+  .faleConosco li {
+    font-size: 20px !important;
+  }
+
+  .faleConosco a {
+    font-size: 10px !important;
+  }
+
+  .linksHome {
+    margin-left: auto !important;
+  }
+
+  .linksHome li {
+    font-size: 24px !important;
+  }
+
+  .linksHome a {
+    font-size: 10px !important;
+  }
+
+  .copy-right-sec {
+    font-size: 15px !important;
+    display: flex !important;
+  }
+
+  .copy-right-sec p {
+    font-size: 13px !important;
+    margin-left: 2px;
+    margin-right: 5px;
+  }
+
+  .copy-right-sec a {
+    font-size: 13px !important;
+  }
+
+  .copy-right-sec i {
+    font-size: 8px !important;
+  }
+
+}

@@ -1,0 +1,1467 @@
+.body-Cart {
+  width: 100% !important;
+}
+
+.btn {
+  border: none !important;
+}
+
+.nav-cart {
+
+  align-items: center !important;
+
+  /* background-color: white !important; */
+
+  /* background-color: aqua !important; */
+
+}
+
+.nav-cart img {
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 180px !important;
+
+}
+
+.myGrid {
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  justify-content: center;
+
+}
+
+/* NavBar responsiva */
+
+.navChoco {
+
+  color: transparent;
+
+  border: none !important;
+
+  /* background-color: aquamarine !important; */
+
+}
+
+.navChoco i {
+
+  /* color: #FFE925 ; */
+
+  font-size: 45px !important;
+
+  /* color: red !important; */
+
+}
+
+.myGridChild1 {
+
+  /* background-color: white !important; */
+
+  /* background-color: #442510 !important; */
+
+  grid-area: 1 / 1 / 2 / 2 !important;
+
+  font-size: 12px !important;
+
+  border: none !important;
+
+  text-align: center !important;
+
+  width: 100% !important;
+
+  height: 40% !important;
+
+}
+
+.body-Cart {
+
+  width: 100% !important;
+
+  /* background-color: #FBBC04 !important; */
+
+}
+
+.navChocola {
+
+  margin: auto !important;
+
+  width: 100% !important;
+
+  /* background-color: pink !important; */
+
+}
+
+.nav-ChocoItem {
+
+  margin-right: auto !important;
+
+
+
+}
+
+/* Termino do responsivo */
+
+
+
+/* Inicio da navbar desktop */
+
+.alphaBrand {
+
+  position: relative;
+
+  margin: 0 auto;
+
+  justify-content: center;
+
+  text-align: center;
+
+  align-items: center;
+
+  /* background-color: blueviolet; */
+
+}
+
+.nav-chocoLink {
+
+  margin-top: 0px !important;
+
+  color: black !important;
+
+  font-weight: 800 !important;
+
+  font-family: 'Montsserrat', sans-serif;
+
+}
+
+.nav-alpha a {
+
+  color: black !important;
+
+}
+
+.nav-alpha:hover {
+
+  text-decoration: underline 2px #FFE925 !important;
+
+}
+
+.myGridChild2 {
+
+  grid-area: 1 / 2 / 2 / 3;
+
+  position: relative;
+
+  align-items: center;
+
+  justify-content: center;
+
+  margin: 0 auto !important;
+
+}
+
+.myGridChild3 {
+
+  grid-area: 1 / 3 / 2 / 4;
+
+  /* background-color: chartreuse !important; */
+
+}
+
+.myGridChild3 .icon-search {
+
+  font-size: 20px !important;
+
+  margin-top: 2px !important;
+
+  margin-right: 5px !important;
+
+  margin-left: 5px !important;
+
+
+
+}
+
+.myGridChild3 {
+
+  position: absolute;
+
+  top: 0;
+
+  right: 0;
+
+  z-index: 10;
+
+  border: none;
+
+  background: transparent;
+
+  outline: none;
+
+}
+
+.myGridChild3 {
+  display: grid;
+  grid-template-columns: 75%  5% repeat(1, 10%);
+  grid-template-rows: 100%;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  
+  position: relative;
+
+  /* width: 350px; */
+
+}
+
+.myGridChild3 i {
+
+  font-size: 25px !important;
+
+  /* color: red; */
+
+}
+
+.pesquisarChoco {
+
+  display: flex;
+
+  border: 1px solid black !important;
+
+  border-radius: 10px !important;
+
+  margin-right: 20px !important;
+
+  margin-left: 15px !important;
+
+  font-size: 20px !important;
+
+  color: #FBBC04;
+
+}
+
+.pesquisarChoco input {
+
+  border: 0px !important;
+
+  border-radius: 10px !important;
+
+}
+
+.bi-cart2 {
+
+  margin-right: 10px !important;
+  color: #000000 !important;
+
+
+}
+/* Dropdown Logout Ecommerce */
+.dropdown-perfil-Ecommecer{
+  color: #000000 !important;
+  background-color: transparent !important;
+  border: none !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  height: 40px !important;
+  
+}
+
+.dropdown-perfil-Ecommecer i{
+  color: black !important;
+  font-size: 30px !important;
+  position: relative !important;
+  margin-left: 20rem !important;
+  /* margin-top: -10% !important; */
+  /* margin-left: 100% !important; */
+}
+
+/* Sumir com o arrow do Dropdown */
+.dropdown-perfil-Ecommecer::after {
+  display: none;
+}
+
+.dropdown-menu-Ecommerce{
+  /* background-color: #63420A; */
+  /* position: relative; */
+  margin-left: 19rem!important;
+}
+
+
+.orange-container {
+  background-color: #FBBC04;
+  padding: 20px;
+  margin: 0 20px;
+  /* Margem nos lados */
+  display: flex;
+
+}
+
+.centered-image{
+  width: 100% !important;
+  text-align: center !important;
+  align-items: center !important;
+}
+
+.body-Cart {
+  margin-top: 0px !important;
+}
+
+.image-menina {
+  width: 300px;
+  height: auto;
+  margin-top: 40px;
+  /* Ajusta a posição vertical */
+  margin-left: 30%;
+  /* Ajusta a posição horizontal */
+  margin-right: 100px;
+
+}
+
+.space-above {
+  margin-top: 60px;
+  /* Aumenta o espaçamento acima dos textos */
+}
+
+
+.pattaya-text {
+  font-family: Pattaya;
+  color: white;
+  font-size: 80px;
+  margin-bottom: 10px !important;
+  /* text-align: left !important; */
+}
+
+.montserrat-text {
+  font-family: 'Montserrat', sans-serif;
+  /* Usando Montserrat como fonte */
+  color: rgb(0, 0, 0);
+  /* Definindo a cor do texto como preto */
+  font-size: 20px;
+  font-weight: bold;
+  margin: auto !important;
+  text-align: left !important;
+}
+
+/* BOLAS */
+
+.colorful-background {
+  background-image: url('../Ecommerce/img/back-ball.png');
+  /* URL da sua imagem de bolas */
+  padding: 20px;
+  margin: 0 20px;
+  margin-bottom: 20px !important;
+  /* Margem nos lados */
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90vh;
+  z-index: 1;
+
+}
+
+.sobreEquipe {
+  text-align: center !important;
+  /* Alinha o texto ao centro */
+  width: 100% !important;
+  margin-top: 20% !important;
+}
+
+
+.sobreEquipe-title {
+  font-family: Righteous, sans-serif !important;
+  /* Define a fonte Righteous */
+  font-weight: bold !important;
+  /* Deixa o texto em negrito */
+  font-size: 35px !important;
+  /* Tamanho da fonte */
+}
+
+.sobreEquipe-Conteudo {
+  font-family: 'Montserrat', sans-serif;
+  /* Define a fonte Montserrat */
+  font-size: 20px;
+  width: 50% !important;
+margin: 0 auto !important; /* Tamanho da fonte */
+}
+
+.saiba-mais-button {
+  font-family: 'Righteous', sans-serif;
+  color: white;
+  background-color: #8E5915;
+  border: none;
+  padding: 10px 20px;
+  /* Espaço entre os botões */
+  cursor: pointer;
+  border-radius: 7%;
+}
+
+.saiba-mais-button:hover {
+  background-color: #63420A;
+  /* Cor do botão ao passar o mouse */
+}
+
+.image-menino {
+  width: 30%;
+  height: auto;
+  margin-top: auto !important;
+  /* Ajusta a posição vertical */
+  margin-left: auto !important;
+  /* Ajusta a posição horizontal */
+}
+
+.centered-image {
+  width: 60%;
+}
+
+.carousel-section {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  z-index: 1;
+}
+
+.carousel-section img{
+  width: 30% !important;
+}
+
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.slide {
+  display: none;
+  width: 70%;
+}
+
+.slide.active {
+  display: block;
+}
+
+.prev,
+.next {
+  /* Mudança para posição fixa */
+  bottom: 20px;
+  /* Distância da parte inferior da página */
+  width: 70px;
+  /* Largura dos botões */
+  height: 70px;
+  /* Altura dos botões */
+  background-color: #FBBC04;
+  border-radius: 50%;
+  /* Torna os botões redondos */
+  border: none;
+  cursor: pointer;
+}
+
+.prev i,
+.next i {
+  color: #000000;
+  font-size: 30px !important;
+  font-weight: bold !important;
+  /* Tamanho do ícone */
+  margin-top: 5px !important;
+
+  
+}
+
+.buy-button-container {
+  text-align: center;
+  padding-top: 250px;
+  /* Ajuste conforme necessário */
+}
+
+.buy-button {
+  background-color: #E4BA67;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 50%;
+  /* Torna o botão redondo */
+  padding: 20px 30px;
+  /* Ajuste conforme necessário */
+  font-size: 30px;
+  /* Ajuste conforme necessário */
+  cursor: pointer;
+  font-family: 'Montserrat';
+  font-weight: bold;
+}
+
+
+.buy-button:hover {
+  background-color: #63420A;
+  /* Cor do botão ao passar o mouse */
+}
+
+#footerLoja {
+  background:#63420A !important;
+  padding: 1rem;
+  /* padding-top: 5rem; */
+  /* background-color: #63420A !important; */
+}
+
+#footerLoja a {
+  text-decoration: none;
+}
+
+#footer2 {
+  /* background: #f7f7f7; */
+  padding: 3rem;
+  margin-top: 0px;
+  /* padding-top: 5rem; */
+  padding-top: 7rem;
+  padding-bottom: 80px;
+  background-color: #8E5915 !important;
+}
+
+.social-links {
+  color: white;
+
+} 
+
+.logoHome {
+  text-align: center !important;
+} 
+
+.logo-footer {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-top: 25% !important;
+}
+
+.social-links h2 {
+  padding-bottom: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+}
+
+.social-links img {
+  padding-bottom: 25px;
+}
+
+.social-icons {
+  /* display: flex;*/
+    gap: 3rem; 
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: white;
+}
+
+.social-icons a {
+  color: white;
+}
+
+.social-icons a:hover {
+  color: white;
+}
+
+.social-icons a i {
+  padding: 0.4rem 1rem 0.4rem 1rem;
+  border-radius: 3px;
+  color: #ffffff;
+  font-size: 16px;
+  margin-right: 12px;
+}
+
+li {
+  list-style: none;
+}
+
+.useful-link h2 {
+  padding-bottom: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+}
+
+.useful-link img {
+  padding-bottom: 15px;
+}
+
+.use-links {
+  line-height: 32px;
+}
+
+.use-links li i {
+  font-size: 14px;
+  padding-right: 8px;
+  color: white;
+}
+
+.use-links li a {
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+}
+
+.address h2 {
+  padding-bottom: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+}
+
+.address img {
+  padding-bottom: 15px;
+}
+
+.address-links li a {
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+
+}
+
+.address-links li i {
+  font-size: 16px;
+  padding-right: 8px;
+  color: white;
+
+}
+
+.address-links li i:nth-child(1) {
+  padding-top: 9px;
+}
+
+.address-links .address1 {
+  font-weight: 500;
+  font-size: 15px;
+  display: flex;
+}
+
+.address-links {
+  line-height: 32px;
+  color: white;
+}
+
+.copy-right-sec {
+  padding: 1.8rem;
+  background: #8E5915;
+  color: #fff;
+  text-align: center;
+}
+
+.copy-right-sec a {
+  color: #fcd462;
+  font-weight: 500;
+}
+
+
+.copy-right-sec {
+  display: flex !important;
+}
+
+.itemsCopy {
+  display: flex !important;
+  margin: auto !important;
+}
+
+.itemsCopy i {
+  font-size: 10px !important;
+}
+
+.itemsCopy p {
+  margin-left: 5px !important;
+  margin-right: 5px !important;
+}
+
+.prev{
+  margin-right: 10px !important;
+} 
+
+@media screen and (max-width: 1300px) {
+
+  .colorful-background {
+    background-image: url('../Ecommerce/img/back-ball.png');
+    /* URL da sua imagem de bolas */
+    background-size: 90%;
+    padding: 20px;
+    margin: 0 15px;
+    /* Margem nos lados */
+    background-repeat: no-repeat;
+    height: 70vh;
+    z-index: 1;
+    margin-bottom: 20px !important;
+  }
+  .dropdown-perfil-Ecommecer i{
+    margin-left: 0 !important;
+  }
+  .orange-container {
+    flex-direction: column-reverse;
+    /* Inverte a direção da coluna */
+    align-items: center;
+    /* Centraliza os itens na coluna */
+    padding: 20px 10px;
+    /* Ajusta o preenchimento */
+  }
+
+  .image-menina {
+    width: 40%;
+    /* Reduz a largura da imagem */
+    margin: 20px 0;
+    /* Ajusta a margem */
+  }
+
+  .pattaya-text {
+    font-family: Pattaya;
+    color: white;
+    font-size: 55px;
+  }
+
+  .montserrat-text {
+    width: 60% !important;
+    font-size: 22px;
+    padding: 5;
+    margin: auto !important;
+  }
+
+  .sobreEquipe-title {
+    font-family: Righteous, sans-serif;
+    /* Define a fonte Righteous */
+    font-weight: bold;
+    /* Deixa o texto em negrito */
+    font-size: 35px;
+    /* Tamanho da fonte */
+  }
+
+  .sobreEquipe-Conteudo {
+    font-family: Montserrat, sans-serif;
+    /* Define a fonte Montserrat */
+    font-size: 25px;
+    /* Tamanho da fonte */
+  }
+
+  .space-above {
+    margin-top: 50px;
+    /* Reduz o espaçamento acima dos textos */
+    text-align: center;
+    /* Centraliza o texto */
+    /* Remove o preenchimento à esquerda */
+  }
+
+  .sobreEquipe {
+    padding: 20px;
+    /* Ajusta o preenchimento */
+    width: 100%;
+  }
+
+  .buttons {
+    /* Reduz o espaçamento entre os botões */
+    display: flex;
+    /* Coloca os botões em uma linha */
+    flex-direction: column;
+    /* Ajusta a direção para coluna */
+    align-items: center;
+    /* Centraliza os botões */
+  }
+
+  .saiba-mais-button {
+    /* Adiciona espaço entre os botões */
+  }
+
+  .menino-img {
+    text-align: center;
+    /* Centraliza o conteúdo */
+  }
+
+
+
+  .carousel-section {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    z-index: 1;
+  }
+
+
+  .carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .slide {
+    display: none;
+    width: 70%;
+  }
+
+  .slide.active {
+    display: block;
+  }
+
+  .prev,
+  .next {
+    /* Mudança para posição fixa */
+    bottom: 20px;
+    /* Distância da parte inferior da página */
+    width: 50px;
+    /* Largura dos botões */
+    height: 50px;
+    /* Altura dos botões */
+    background-color: #FBBC04;
+    border-radius: 50%;
+    /* Torna os botões redondos */
+    border: none;
+    cursor: pointer;
+  }
+
+  .prev i,
+  .next i {
+    color: #000000;
+    font-size: 30px;
+    /* Tamanho do ícone */
+  }
+
+  .buy-button-container {
+    padding-top: 230px;
+    /* Ajusta o preenchimento */
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+
+  .colorful-background {
+    background-image: url('../Ecommerce/img/back-ball.png');
+    /* URL da sua imagem de bolas */
+    background-size: 100%;
+    padding: 20px;
+    margin: 0 5px;
+    /* Margem nos lados */
+    background-repeat: no-repeat;
+    height: 60vh;
+    z-index: 1;
+    margin-bottom: 20px !important;
+  }
+
+  .WIDTH {
+    width: auto !important;
+    display: flex;
+    margin: auto !important;
+  }
+
+
+
+  .localHome {
+    display: none !important;
+  }
+
+  .orange-container {
+    flex-direction: column-reverse;
+    /* Inverte a direção da coluna */
+    align-items: center;
+    /* Centraliza os itens na coluna */
+    padding: 20px 10px;
+    /* Ajusta o preenchimento */
+  }
+
+  .image-menina {
+    width: 40%;
+    /* Reduz a largura da imagem */
+    margin: 20px 0;
+    /* Ajusta a margem */
+  }
+
+  .pattaya-text {
+    font-family: Pattaya;
+    color: white;
+    font-size: 40px;
+  }
+
+  .montserrat-text {
+    width: 70% !important;
+    font-size: 15px;
+    padding: 5;
+    margin: auto !important;
+  }
+
+  .sobreEquipe-title {
+    font-family: Righteous, sans-serif;
+    /* Define a fonte Righteous */
+    font-weight: bold;
+    /* Deixa o texto em negrito */
+    font-size: 30px;
+    /* Tamanho da fonte */
+  }
+
+  .sobreEquipe-Conteudo {
+    font-family: Montserrat, sans-serif;
+    /* Define a fonte Montserrat */
+    font-size: 20px;
+    /* Tamanho da fonte */
+  }
+
+  .space-above {
+    margin-top: 20px;
+    /* Reduz o espaçamento acima dos textos */
+    text-align: center;
+    /* Centraliza o texto */
+    /* Remove o preenchimento à esquerda */
+  }
+
+  .sobreEquipe {
+    padding: 20px;
+    /* Ajusta o preenchimento */
+    width: 100%;
+  }
+
+  .buttons {
+    /* Reduz o espaçamento entre os botões */
+    display: flex;
+    /* Coloca os botões em uma linha */
+    flex-direction: column;
+    /* Ajusta a direção para coluna */
+    align-items: center;
+    /* Centraliza os botões */
+  }
+
+  .menino-img {
+    text-align: center;
+    /* Centraliza o conteúdo */
+  }
+
+
+
+  .carousel-section {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    z-index: 1;
+  }
+
+
+  .carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .slide {
+    display: none;
+    width: 70%;
+  }
+
+  .slide.active {
+    display: block;
+  }
+
+  .prev,
+  .next {
+    /* Mudança para posição fixa */
+    bottom: 20px;
+    /* Distância da parte inferior da página */
+    width: 50px;
+    /* Largura dos botões */
+    height: 50px;
+    /* Altura dos botões */
+    background-color: #FBBC04;
+    border-radius: 50%;
+    /* Torna os botões redondos */
+    border: none;
+    cursor: pointer;
+  }
+
+  .prev i,
+  .next i {
+    color: #000000;
+    font-size: 30px;
+    /* Tamanho do ícone */
+  }
+
+
+  .buy-button-container {
+    padding-top: 100px;
+    /* Ajusta o preenchimento */
+  }
+
+  #footerLoja {
+    /* Ajusta o preenchimento superior */
+    padding-bottom: 20px;
+    /* Ajusta o preenchimento inferior */
+    flex-direction: row;
+    display: flex;
+  }
+
+  .logo-footer {
+    display: block;
+  }
+
+  .social-links,
+  .useful-link,
+  .address {
+    text-align: center;
+    /* Centraliza o conteúdo */
+    margin-bottom: 20px;
+    /* Adiciona espaço entre os elementos */
+  }
+
+  .social-icons,
+  .use-links,
+  .address-links {
+    display: flex;
+    /* Coloca os itens em uma linha */
+    flex-direction: column;
+    /* Ajusta a direção para coluna */
+    align-items: center;
+    /* Centraliza os itens na coluna */
+  }
+
+  .copy-right-sec {
+    padding: 1rem;
+    /* Ajusta o preenchimento */
+  }
+
+  .address {
+    display: none;
+  }
+
+  .carousel-section img{
+    width: 40% !important;
+  }
+
+  .image-menino {
+    width: 40%;
+    height: auto;
+    margin-top: auto !important;
+    /* Ajusta a posição vertical */
+    margin-left: auto !important;
+    /* Ajusta a posição horizontal */
+  }
+  
+}
+
+@media screen and (max-width: 600px) {
+
+  .colorful-background {
+    background-image: url('../Ecommerce/img/back-ball.png');
+    /* URL da sua imagem de bolas */
+    background-size: 100%;
+    padding: 20px;
+    margin: 0 5px;
+    /* Margem nos lados */
+    background-repeat: no-repeat;
+    height: 60vh;
+    z-index: 1;
+    margin-bottom: 20px !important;
+  }
+
+  .logoDiv {
+    display: none !important;
+  }
+
+  .orange-container {
+    flex-direction: column-reverse;
+    /* Inverte a direção da coluna */
+    align-items: center;
+    /* Centraliza os itens na coluna */
+    padding: 20px 10px;
+    /* Ajusta o preenchimento */
+  }
+
+  .image-menina {
+    width: 40%;
+    /* Reduz a largura da imagem */
+    margin: 20px 0;
+    /* Ajusta a margem */
+  }
+
+  .pattaya-text {
+    font-family: Pattaya;
+    color: white;
+    font-size: 40px;
+  }
+
+  .montserrat-text {
+    width: 90% !important;
+    font-size: 15px;
+    padding: 5;
+    margin: auto !important;
+  }
+
+  .sobreEquipe-title {
+    font-family: Righteous, sans-serif;
+    /* Define a fonte Righteous */
+    font-weight: bold;
+    /* Deixa o texto em negrito */
+    font-size: 30px;
+    /* Tamanho da fonte */
+  }
+
+  .sobreEquipe-Conteudo {
+    font-family: Montserrat, sans-serif;
+    /* Define a fonte Montserrat */
+    font-size: 17px;
+    /* Tamanho da fonte */
+  }
+
+  .space-above {
+    margin-top: 20px;
+    /* Reduz o espaçamento acima dos textos */
+    text-align: center;
+    /* Centraliza o texto */
+    /* Remove o preenchimento à esquerda */
+  }
+
+  .sobreEquipe {
+    padding: 20px;
+    /* Ajusta o preenchimento */
+    width: 100%;
+  }
+
+  .buttons {
+    /* Reduz o espaçamento entre os botões */
+    display: flex;
+    /* Coloca os botões em uma linha */
+    flex-direction: column;
+    /* Ajusta a direção para coluna */
+    align-items: center;
+    /* Centraliza os botões */
+  }
+
+  .menino-img {
+    text-align: center;
+    /* Centraliza o conteúdo */
+    padding-top: 60px;
+  }
+
+
+
+  .carousel-section {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    z-index: 1;
+  }
+
+
+  .carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .slide {
+    display: none;
+    width: 70%;
+  }
+
+  .slide.active {
+    display: block;
+  }
+
+  .prev,
+  .next {
+    /* Mudança para posição fixa */
+    bottom: 20px;
+    /* Distância da parte inferior da página */
+    width: 50px;
+    /* Largura dos botões */
+    height: 50px;
+    /* Altura dos botões */
+    background-color: #FBBC04;
+    border-radius: 50%;
+    /* Torna os botões redondos */
+    border: none;
+    cursor: pointer;
+  }
+
+  .faleConosco {
+    width: 45% !important;
+  }
+
+  .linksHome {
+    width: 45% !important;
+  }
+
+  .prev i,
+  .next i {
+    color: #000000;
+    font-size: 30px;
+    /* Tamanho do ícone */
+  }
+
+  .buy-button-container {
+    padding-top: 100px;
+    /* Ajusta o preenchimento */
+  }
+
+  #footerLoja {
+    /* Ajusta o preenchimento superior */
+    padding-bottom: 20px;
+    /* Ajusta o preenchimento inferior */
+    flex-direction: row;
+    display: flex;
+  }
+
+  .col-md-3 {
+    width: auto !important;
+
+  }
+
+  .logo-footer {
+    display: none;
+  }
+
+  .social-links,
+  .useful-link,
+  .address {
+    text-align: center;
+    /* Centraliza o conteúdo */
+    margin-bottom: 20px;
+    /* Adiciona espaço entre os elementos */
+  }
+
+  .social-icons,
+  .use-links,
+  .address-links {
+    display: flex;
+    /* Coloca os itens em uma linha */
+    flex-direction: column;
+    /* Ajusta a direção para coluna */
+    align-items: center;
+    /* Centraliza os itens na coluna */
+  }
+
+  .copy-right-sec {
+    padding: 1rem;
+    /* Ajusta o preenchimento */
+  }
+
+  .address {
+    display: none;
+  }
+
+  .prev i,
+  .next i {
+    color: #000000;
+    font-size: 20px !important;
+    /* Tamanho do ícone */
+    margin-top: 10px !important;
+  }
+
+  .carousel-section img{
+    width: 50% !important;
+  }
+
+  .image-menino {
+    width: 50%;
+    height: auto;
+    margin-top: auto !important;
+    /* Ajusta a posição vertical */
+    margin-left: auto !important;
+    /* Ajusta a posição horizontal */
+  }
+  
+}
+
+@media screen and (max-width: 400px) {
+
+  .colorful-background {
+    background-image: url('../Ecommerce/img/back-ball.png');
+    /* URL da sua imagem de bolas */
+    background-size: 100%;
+    padding: 10px;
+    margin: 0 5px;
+    /* Margem nos lados */
+    background-repeat: no-repeat;
+    height: 70vh;
+    z-index: 1;
+    margin-bottom: 20px !important;
+  }
+
+  .orange-container {
+    flex-direction: column-reverse;
+    /* Inverte a direção da coluna */
+    align-items: center;
+    text-align: center !important;
+    /* Centraliza os itens na coluna */
+    padding: 20px 10px;
+    /* Ajusta o preenchimento */
+  }
+
+  .image-menina {
+    width: 40%;
+    /* Reduz a largura da imagem */
+    margin: 20px 0;
+    /* Ajusta a margem */
+  }
+
+  .pattaya-text {
+    font-family: Pattaya;
+    color: white;
+    font-size: 40px;
+  }
+
+  .montserrat-text {
+    width: 90% !important;
+    font-size: 15px;
+    padding: 5;
+    margin: auto !important;
+  }
+
+  .sobreEquipe-title {
+    font-family: Righteous, sans-serif;
+    /* Define a fonte Righteous */
+    font-weight: bold;
+    /* Deixa o texto em negrito */
+    font-size: 20px;
+    /* Tamanho da fonte */
+  }
+
+  .sobreEquipe-Conteudo {
+    font-family: Montserrat, sans-serif;
+    /* Define a fonte Montserrat */
+    font-size: 17px;
+    /* Tamanho da fonte */  
+  }
+
+  .space-above {
+    margin-top: 20px;
+    /* Reduz o espaçamento acima dos textos */
+    text-align: center;
+    /* Centraliza o texto */
+    /* Remove o preenchimento à esquerda */
+  }
+
+  .sobreEquipe {
+    padding: 20px;
+    /* Ajusta o preenchimento */
+    width: 100%;
+  }
+
+  .buttons {
+    /* Reduz o espaçamento entre os botões */
+    display: flex;
+    /* Coloca os botões em uma linha */
+    flex-direction: column;
+    /* Ajusta a direção para coluna */
+  }
+
+  .menino-img {
+    text-align: center;
+    /* Centraliza o conteúdo */
+    padding-top: 60px;
+  }
+
+  .carousel-section {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    z-index: 1;
+  }
+
+
+  .carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .slide {
+    display: none;
+    width: 70%;
+  }
+
+  .slide.active {
+    display: block;
+  }
+
+  .prev,
+  .next {
+    /* Mudança para posição fixa */
+    bottom: 20px;
+    /* Distância da parte inferior da página */
+    width: 40px;
+    /* Largura dos botões */
+    height: 40px;
+    /* Altura dos botões */
+    background-color: #FBBC04;
+    border-radius: 50%;
+    /* Torna os botões redondos */
+    border: none;
+    cursor: pointer;
+
+  
+
+  }
+
+  .prev i,
+  .next i {
+    color: #000000;
+    font-size: 25px;
+    font-weight: bold !important;
+   
+    /* Tamanho do ícone */
+  }
+
+  .buy-button-container {
+    padding-top: 80px;
+    /* Ajusta o preenchimento */
+  }
+
+  .itemsCopy i {
+    font-size: 10px !important;
+  }
+
+  .itemsCopy p {
+    font-size: 13px !important;
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+  }
+
+  .itemsCopy a {
+    font-size: 13px !important;
+  }
+
+
+}
+
+@media (max-width: 350px) {
+
+  .faleConosco li {
+    font-size: 20px !important;
+  }
+
+  .faleConosco a {
+    font-size: 10px !important;
+  }
+
+  .linksHome {
+    margin-left: auto !important;
+  }
+
+  .linksHome li {
+    font-size: 24px !important;
+  }
+
+  .linksHome a {
+    font-size: 10px !important;
+  }
+
+  .copy-right-sec {
+    font-size: 15px !important;
+    display: flex !important;
+  }
+
+  .copy-right-sec p {
+    font-size: 13px !important;
+    margin-left: 2px;
+    margin-right: 5px;
+  }
+
+  .copy-right-sec a {
+    font-size: 13px !important;
+  }
+
+  .copy-right-sec i {
+    font-size: 8px !important;
+  }
+
+}

@@ -1,0 +1,867 @@
+/* Total */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(255, 255, 255) !important;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.menuListar {
+    width: 100%;
+}
+
+.menuCenterListar {
+    list-style-type: none;
+    display: flex;
+    position: relative;
+    gap: 40px;
+    margin: auto;
+}
+
+.menuCenterListar{
+    padding-left: 0px !important;
+}
+
+.menuCenterListar li {
+    width: 38px;
+    height: 38px;
+    background-color: #000000;
+    box-shadow: 0 8px 25px #00000059;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: .2s;
+}
+.offcanvas-listar a{
+    color: #000000 !important;
+}
+.offcanvas-dropdown-listar{
+    background-color:white !important;
+}
+
+.offcanvas-dropdown-listar :hover{
+    background-color: transparent !important;
+}
+.Dashboard {
+    background-color: transparent !important;
+    border: 0.1px solid black;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.178) !important;
+}
+
+.Dashboard i {
+    color: rgb(0, 0, 0);
+}
+
+.Listar {
+    background-color: transparent !important;
+    border: 0.1px solid black;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.178) !important;
+}
+
+.Listar i {
+    color: #000000;
+}
+
+.Formulario {
+    background-color: transparent !important;
+    border: 0.1px solid black;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.178) !important;
+}
+
+.Formulario i {
+    color: #000000;
+}
+
+.Visualizar {
+    background-color: transparent !important;
+    border: 0.1px solid black;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.178) !important;
+}
+
+.Visualizar i {
+    color: #000000;
+}
+
+.Alerta {
+    background-color: transparent !important;
+    border: 0.1px solid black;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.178) !important;
+}
+
+.Alerta i {
+    color: #000000;
+}
+
+.logOut {
+    background-color: transparent !important;
+    border: 0.1px solid black;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.178) !important;
+}
+
+.logOut i {
+    color: #000000 !important;
+}
+
+.menuCenterListar li:hover {
+    width: 110px;
+    border: 0px solid !important;
+}
+
+.menuCenterListar li span {
+    position: absolute;
+}
+
+.iconListar {
+    color: #ffffff;
+    font-size: 1.1em;
+    transform: .2s;
+    transition-delay: .1s;
+}
+
+.textListar {
+    color: #fff;
+    font-size: 13px;
+    transform: scale(0);
+    transition: .1s;
+}
+
+.menuCenterListar li:hover .text {
+    transform: scale(1);
+}
+
+.menuCenterListar li:hover .icon {
+    transform: scale(0);
+}
+
+.menuCenterListar li::before {
+    content: '';
+    position: absolute;
+    background-image: linear-gradient(45deg, var(--cor1), var(--cor2));
+    border: 0px solid !important;
+    inset: 0;
+    border: none !important;
+    opacity: 0;
+    border-radius: 60px;
+}
+
+.menuCenterListar li:hover::before {
+    opacity: 1;
+}
+
+.menuCenterListar {
+    margin-left: auto;
+}
+
+.li-Listar{
+    color: white !important;
+}
+
+.Dashboard {
+    --cor1: rgb(255, 158, 13);
+    --cor2: #FECF12;
+}
+
+.Listar {
+    --cor1: #4d07ff;
+    --cor2: #0e81f5;
+}
+
+.Formulario {
+    --cor1: #43FE84;
+    --cor2: #2DBC5D;
+}
+
+.Visualizar {
+    --cor1: #00a2ff;
+    --cor2: #007ac0;
+}
+
+.Alerta {
+    --cor1: #ff0077;
+    --cor2: #ff0000;
+}
+
+.logOut {
+    --cor1: #f8d92a;
+    --cor2: #faf56b;
+}
+
+.footer-listar{
+    padding-left: 0px !important;
+}
+
+.menuLinha {
+    flex-direction: column;
+}
+
+.nav-itemListar{
+    color: white !important;
+}
+
+.dashboardCell {
+    background-color: white !important;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.listarCell {
+    background-color: white !important;
+    margin: auto;
+}
+
+.formularioCell {
+    background-color: white !important;
+    margin: auto;
+}
+
+.visualizarCell {
+    background-color: white !important;
+    margin: auto;
+}
+
+.alertaCell {
+    background-color: white !important;
+    margin: auto;
+}
+
+.logOutCell {
+    background-color: white !important;
+    margin: auto;
+}
+
+.offcanvas-endListar {
+    background-color: #000000 !important;
+    color: #FFE925 !important;
+}
+
+.menuResponsiListar {
+    border: 0px solid transparent !important;
+    color: transparent !important;
+}
+
+.menuResponsiListar .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23FBBC04' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.imgLogo {
+    width: 30px;
+    height: 30px;
+}
+
+/* Listar */
+
+.navbarTopo {
+    padding: 0px !important;
+    background-color: #000000 !important;
+    border: 0px transparent !important;
+}
+
+.navbarFluidListar {
+    background-color: black !important;
+    padding: 0px !important;
+}
+
+.headerComputador {
+    background-color: black !important;
+    text-align: center !important;
+    width: 100% !important;
+    height: 8vh;
+    text-align: center;
+}
+
+.container-fluidListar{
+    background-color: rgb(0, 0, 0) !important;
+}
+
+.logoAlpha {
+    margin-top: 1.5vh;
+    height: 30px;
+}
+
+.imgLogo {
+    height: 40px;
+    width: 60px;
+}
+
+.navbar-togglerListar {
+    display: none;
+}
+
+@media (max-width: 500px) {
+    .navbar-togglerListar {
+        display: none;
+    }
+
+    .logoAlpha {
+        margin-top: 1.8vh;
+    }
+
+}
+
+/* Procurar */
+
+.procurar {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.pesquisar {
+    width: 350px !important;
+    display: flex;
+    background-color: #E1E1E1 !important;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: 5px;
+}
+
+.pesquisar i {
+    font-size: 20px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.pesquisarInput {
+    width: 190px !important;
+    background-color: transparent !important;
+    border-left: 1px black !important;
+}
+
+.opcoes {
+    width: 120px !important;
+    background-color: transparent !important;
+    border-left: 1px solid black !important;
+    border-radius: 0px !important;
+    border-right: 0px !important;
+    border-top: 0px !important;
+    border-bottom: 0px !important;
+    border-top-right-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+    background-color: #E1E1E1 !important;
+}
+
+.opcoes option:hover {
+    background-color: transparent !important;
+    /* Define a cor de fundo como transparente */
+}
+
+.filtrar {
+    margin-right: auto;
+    margin-left: 5px;
+    background-color: #FFE925 !important;
+    border-radius: 10px !important;
+}
+
+.dropdown-Filtrar {
+    background-color: #FFE925 !important;
+    border: none !important;
+    color: black !important;
+}
+
+.itensFiltrar {
+    background-color: #FFE925 !important;
+    border: none !important;
+}
+
+.opcoesAZ {
+    background-color: #FFE925;
+    border: 0px !important;
+    border-radius: 0px !important;
+}
+
+.opcoesAZ option {
+    border: 0px !important;
+}
+
+.opcoesAZ option:hover {
+    background-color: #FFE925 !important;
+    color: black !important;
+}
+
+.opcoesAZ:hover {
+    background-color: #FFE925;
+}
+
+@media (max-width: 705px){
+.cell-state{
+    display: none !important;
+}
+}
+@media (max-width: 650px) {
+    .procurar {
+
+        display: flex;
+        flex-direction: column !important;
+
+    }
+
+    .pesquisar {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .filtrar {
+        margin-top: 10px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+}
+
+
+/* Fim do Procurar */
+
+
+/* Parte Tabela */
+.tabela {
+    width: 80% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: 3vh;
+    align-items: center !important;
+    text-align: center !important;
+}
+
+.conteudoTable {
+    padding: 10px !important;
+}
+
+th {
+    color: #9D9D9D !important;
+    text-align: center !important;
+}
+
+td {
+    color: #9D9D9D !important;
+    text-align: center;
+    font-size: 16px;
+}
+
+.btn-view {
+    background-color: transparent !important;
+    border: 0px !important;
+    color: #FBBC04 !important;
+    padding: 0px 12px !important;
+}
+
+.btn-view i {
+    font-size: 25px;
+}
+
+.btn-edit {
+    background-color: transparent !important;
+    border: 0px !important;
+    color: #0085FF !important;
+    padding: 0px 12px !important;
+}
+
+.btn-edit i {
+    font-size: 23px;
+}
+
+.btn-delete {
+    background-color: transparent !important;
+    border: 0px !important;
+    color: #FF0000 !important;
+    padding: 0px 12px !important;
+}
+
+.btn-delete i {
+    font-size: 23px;
+}
+
+.modal-tableListar {
+    display: flex;
+}
+
+.table-responsive {
+    overflow-x: auto !important;
+    margin: auto !important;
+    padding: auto !important;
+}
+
+.table_center {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.example {
+    margin: auto !important;
+}
+
+.page {
+    border: 0px !important;
+}
+
+.pagination {
+    margin: auto !important;
+    border: 0px !important;
+}
+
+.page-item1 {
+    margin-left: auto;
+    border: 0px !important;
+}
+
+.page-item2 {
+    margin-right: auto;
+    border: 0px !important;
+}
+
+.page-link {
+    border: 0px !important;
+    color: black !important;
+}
+
+
+/* Fim da Parte Tabela */
+
+/* Modal */
+
+.formFulLISTAR{
+    background-color: white !important;
+}
+
+.colistar{
+    background-color: white !important;
+}
+
+@media (max-width: 1276px) {
+    .modoCellFor {
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+    }
+
+    .modoCellFor table {
+        width: auto;
+        border-collapse: collapse;
+    }
+
+    .modoCellFor thead,
+    .modoCellFor tbody {
+        flex: 1;
+    }
+
+    .tabela {
+        width: 85% !important;
+        /* height: 60vh !important; */
+        margin-left: auto !important;
+        margin-right: auto !important;
+        margin-top: 3vh;
+        font-size: 13px !important;
+    }
+
+    .modoCellFor th,
+    .modoCellFor td {
+        text-align: center;
+        border: 1px solid #dee2e6;
+        padding: 8px;
+    }
+}
+
+@media (max-width:1200px){
+    .imageEdit{
+        display: none !important;
+    }
+
+    .colCep {
+        max-width: 250px;
+        padding-left: 12px;
+    }
+}
+
+.modalListar {
+    background-color: #5c5c5c4b !important;
+    text-align: center;
+    align-items: center;
+}
+
+.modal-contentListar{
+    background-color: white !important;
+}
+
+.modal-bodyListar {
+    background-color: #ffffff !important;
+    color: #FBBC04 !important;
+}
+
+.modal-headerListar {
+    background-color: #ffffff !important;
+    color: #FBBC04 !important;
+}
+
+
+.modal-footerListar {
+    background-color: #ffffff !important;
+}
+
+.modal-contentListar .custom-closeListar {
+    font-size: 40px;
+    color: #FBBC04;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    cursor: pointer;
+}
+
+/* Fim Modal View */
+
+/* Modal Editar */
+
+.form-floating {
+    width: 400px;
+}
+
+.formCep {
+    width: 225px !important;
+}
+
+.formState {
+    width: 150px !important;
+}
+
+.modal-editar {
+    display: grid;
+    grid-template-columns: auto;
+    margin: auto;
+}
+/* alteração dia 22/05 */
+.base-modal-editar{
+    margin-bottom: -16px;
+}
+/* fim da alteração */
+
+.textoID {
+    color: #000000 !important;
+    margin-left: 0px;
+    width: 150px;
+}
+
+.modal-footerListar {
+
+    width: 100%;
+}
+
+.btn-save {
+    background-color: black !important;
+    border-radius: 0px !important;
+    border: 0px !important;
+    color: #FBBC04 !important;
+    width: 65%;
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
+@media (max-width: 1150px) {
+
+    .imgEdit {
+        display: none;
+    }
+
+    .modal-editar {
+        display: grid;
+        grid-template-columns: auto;
+        width: 410px;
+        margin: auto;
+    }
+    .base-modal-editar{
+        margin-bottom: -16px !important;
+    }
+    .container-fluidListar {
+        margin: auto;
+    }
+
+    .form-floating {
+        margin: 0 auto;
+        /* Centralize horizontalmente */
+    }
+
+    .form-floating input {
+        width: 350px !important;
+    }
+
+    .formCep input {
+        width: 220px !important;
+    }
+
+    .formState input {
+        width: 100px !important;
+    }
+
+    .table-responsive table.table_center td,
+    .table-responsive table.table_center th {
+        min-width: 100px;
+        /* Defina uma largura mínima para as células */
+        white-space: nowrap;
+        /* Impede que o conteúdo seja quebrado em várias linhas */
+        overflow-y: hidden;
+        /* Oculta o conteúdo que ultrapassa a largura da célula */
+        text-overflow: ellipsis;
+        /* Adiciona reticências (...) ao final do conteúdo que ultrapassa a largura da célula */
+    }
+
+}
+
+@media (max-width:620px){
+   .cell-email{
+    display: none !important;
+   }
+   .base-modal-editar{
+    margin-bottom: -16px !important;
+}
+}
+
+@media (max-width:480px) {
+
+    .formFulLISTAR{
+        width: 295px !important;
+    }
+
+    .form-floating input {
+        width: 320px !important;
+    }
+
+    .colCep{
+        max-width: 219px !important;
+    }
+
+    .formCep input {
+        max-width: 200px !important;
+    }
+
+    .modal-editar {
+        width: 370px;
+        margin: auto;
+    }
+    .base-modal-editar{
+        margin-bottom: -16px !important;
+    }
+
+    .colState{
+        max-width: 100px !important;
+    }
+
+    .formState {
+        width: 100px !important;
+    }
+
+    .formState input {
+        width: 100px !important;
+    }
+}
+
+@media (max-width:391px) {
+    .form-floating input {
+        width: 250px !important;
+    }
+
+    .formFulLISTAR{
+        width: 255px !important;
+    }
+
+    .colCep {
+        max-width: 170px;
+        padding-left: 0px;
+    }
+
+    .formCep input {
+        width: 160px !important;
+    }
+
+    .formCep {
+        width: 150px !important;
+    }
+
+    .formState input {
+        width: 60px !important;
+    }
+
+    .colState {
+        max-width: 90px !important;
+    }
+
+    .modal-editar {
+        width: 300px;
+        margin: auto;
+    }
+    .base-modal-editar{
+        margin-bottom: -16px !important;
+    }
+}
+
+.footer-dashboard {
+    display: flex;
+    width: 100% !important;
+    text-align: center !important;
+    position: absolute !important;
+    margin-top: 0px;
+}
+
+/* parte menu dentro do footer */
+.menu {
+    display: flex;
+    gap: 30px !important;
+    margin: auto;
+}
+
+.menu-button {
+    height: 50px;
+    width: 50px;
+    border-radius: 50% !important;
+    background-color: #000000;
+    position: relative;
+    text-align: center !important;
+}
+
+.menu-button i {
+    color: #fff;
+    position: relative;
+    margin: auto !important;
+}
+
+.close {
+    color: #FFE925 !important;
+    margin: 0px !important;
+}
+
+.bi-x-circle {
+    margin: 0px !important;
+    color: #FFE925 !important;
+}
+
+.button-close {
+    font-size: 30px !important;
+    margin: 0px !important;
+}
+
+.menu-button:hover {
+    color: black !important;
+}
+
+.button1 {
+    margin-left: auto !important;
+}
+
+.button2 {
+    margin-right: auto !important;
+}
+
+@media (min-width:575px){
+    .buttonPerfil-Listar{
+        display: none !important;
+    }
+    .base-modal-editar{
+        margin-bottom: -16px !important;
+    }
+}
