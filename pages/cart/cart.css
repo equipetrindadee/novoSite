@@ -423,7 +423,6 @@ p {
 .card-right-side {
     background-color: #FBBC04;
     width: 25rem;
-    height: 22rem;
     border: none !important;
     position: relative;
     /* top: -30px; */
@@ -453,8 +452,10 @@ p {
 }
 
 .via-product-pagamento {
-    width: 15rem !important;
+    width: 100%;
+    margin: auto;
     /* background-color: aqua; */
+    margin-bottom: 3.5em;
 }
 
 .via-product-pagamento h3 {
@@ -468,18 +469,17 @@ p {
 .via-cartoes-pagamento {
     /* text-align: center;
    margin-bottom: 30px; */
-    display: grid;
-    grid-template-columns: repeat(3, 60px);
-    grid-template-rows: 60px;
-    grid-column-gap: 25px;
-    grid-row-gap: 0px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: auto;
 }
 
 
 .via-cartoes-pagamento img {
     width: 60px;
-    margin: 10%5%0 5%;
-   
+    margin: auto;
+    
 }
 
 .modal-finalizar {
@@ -502,6 +502,7 @@ p {
     background-color: #fff;
     border: 2px solid #FFE925;
     border-radius: 10px;
+    margin-top: 10px;
     /* margin-left: 1000px; */
 }
 
@@ -791,8 +792,6 @@ p {
 
 .summary-info h3 {
 
-    grid-column: span 2 !important;
-
     font-size: 50px !important;
 
     text-align: left !important;
@@ -803,6 +802,9 @@ p {
 
     margin-bottom: 0;
 
+    margin-left: 0;
+
+    margin-right: auto;
 }
 
 .summary-info p {
@@ -1070,7 +1072,6 @@ font-family: 'Montserrat';
     background-color: white !important;
     height: 85vh;
     width: 100% !important;
-    background: url('../../../public/img/bg-modal.svg') !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
     border: 2px solid #8E5915;
@@ -1168,10 +1169,8 @@ font-family: 'Montserrat';
     width: 20%;
 }
 
-.modal-dialogCart {
-    width: 1000px !important;
-    /* background-color: #442510 !important; */
-    /* padding-right: 50px !important; */
+.cartVazio{
+    margin-left: 6%;
 }
 
 @media (max-width:1000px) {
@@ -1218,7 +1217,35 @@ font-family: 'Montserrat';
     }
     
     .principal-direito{
-        width: 5btn0% !important;
+        width: 70% !important;
+    }
+
+    .cardPagamento{
+        width: 100% !important;
+    }
+
+    .via-product-pagamento {
+        width: 100%;
+        margin: auto;
+        /* background-color: aqua; */
+        margin-bottom: 3.5em;
+    }
+
+    .via-cartoes-pagamento img {
+        width: 80px;
+        margin: auto;
+        
+    }
+
+    .seu-codigo {
+        height: 100px;
+        width: 100%;
+        position: relative;
+        z-index: 2;
+        background-color: #fff;
+        border: 2px solid #FFE925;
+        border-radius: 10px;
+        /* margin-left: 1000px; */
     }
 }
 
@@ -1264,6 +1291,13 @@ font-family: 'Montserrat';
 
     .price-product h5{
         font-size: 12px;
+    }
+
+    .via-product-pagamento {
+        width: 100%;
+        margin: auto;
+        /* background-color: aqua; */
+        margin-bottom: 3.5em;
     }
 }
 
@@ -1312,7 +1346,7 @@ font-family: 'Montserrat';
 
 
 /* media para apagar o total para o modo celular ficar sem */
-@media (max-width: 545px) {
+@media (max-width: 550px) {
     .price-product {
         display: none !important;
     }
@@ -1347,5 +1381,48 @@ font-family: 'Montserrat';
 
     .valorTotal{
         display: block;
+    }
+
+    .via-product-pagamento {
+        display: none;
+    }
+
+    .via-cartoes-pagamento img {
+        width: 50px;
+        margin: auto;
+        
+    }
+
+    .principal-direito{
+        width: 100% !important;
+    }
+
+    .cardPagamento{
+        border-radius: 0px !important;
+    }
+
+    .voltar{
+        font-size: 20px !important;
+    }
+
+    .topo-product a i{
+        font-size: 30px !important;
+    }
+
+    .topo-product a{
+        margin-top: 15px;
+    }
+
+    .topo-product h1{
+        font-size: 35px;
+        margin-top: 10px;
+    }
+
+    .topo-product{
+        margin-left: 20px;
+    }
+
+    .cartVazio{
+        margin-left: 7%;
     }
 }

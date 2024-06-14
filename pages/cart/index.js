@@ -5,21 +5,86 @@ import "./cart.css";
 export const Cart = () => {
     const [cartItems, setCartItems] = useState([]);
     const [images, setImages] = useState({});
+    const [userId, setUserId] = useState(null);
     const modalRef = useRef(null);
-    const [formData, setFormData] = useState({
+
+
+    const token = localStorage.getItem('token');
+
+    useEffect(() => {
+        if (token) {
+            fetch('http://localhost:8082/val-token', {
+                method: 'GET',
+                headers: {
+                    'Authorization': `Bearer ${token}`,
+                    'Content-Type': 'application/json'
+                }
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (!data.erro) {
+                        console.log(`User ID: ${data.user.id}`);
+                        setUserId(data.user.id); // Armazenando o ID do usuário no estado
+                    } else {
+                        console.error('Error:', data.mensagem);
+                    }
+                })
+                .catch(error => console.error('Error:', error));
+        } else {
+            console.error('Token not found in localStorage');
+        }
+    }, [token]);
+
+    const [pedido, setPedido] = useState({
         name: '',
-        phone: '',
+        telefone: '',
         cep: '',
-        state: '',
-        city: '',
-        number: '',
-        street: '',
-        complement: '',
-        paymentMethod: '',
-        cardNumber: '',
-        securityCode: '',
-        expiryDate: ''
+        estado: '',
+        cidade: '',
+        rua: '',
+        numero: '',
+        complemento: '',
+        forma_de_pagamento: '',
+        user_id: userId,
+    
     });
+
+    const handleInputChange = (e) => {
+        const { name, value } = e.target;
+        setPedido({
+            ...pedido,
+            [name]: value
+        });
+    };
+
+
+
+    const handleCheckOut = async () => {
+        console.log(pedido)
+        if (Object.values(pedido).some(value => value === '')) {
+            console.error("Por favor, preencha todos os campos.");
+            return;
+        }
+    
+        // Calculando a quantidade total de itens no carrinho
+        const quantidadeTotal = cartItems.reduce((total, item) => total + item.quantity, 0);
+    
+        // Atualizando a propriedade 'quantidade' do objeto 'pedido' com a quantidade total
+        const pedidoComQuantidade = { ...pedido, quantidade: quantidadeTotal.toString() };
+    
+        try {
+            const response = await api.post('/pedido', pedidoComQuantidade);
+            console.log('Pedido cadastrado com sucesso:', response.data);
+            // Lógica adicional após o sucesso, se necessário
+        } catch (error) {
+            console.error('Erro ao cadastrar o pedido:', error.response);
+            // Tratamento específico de erros aqui, se necessário
+        }
+    };
+    
+
+
+
     const [purchaseCode, setPurchaseCode] = useState('');
     const [showThankYouMessage, setShowThankYouMessage] = useState(false);
     const [showModal, setShowModal] = useState(false);
@@ -64,21 +129,6 @@ export const Cart = () => {
         setImages(remainingImages);
     };
 
-    const handleInputChange = (e) => {
-        const { name, value } = e.target;
-        setFormData({ ...formData, [name]: value });
-    };
-
-    const handlePaymentMethodChange = (e) => {
-        const { value } = e.target;
-        setFormData({ ...formData, paymentMethod: value });
-    };
-
-    const handleCheckOut = () => {
-        setShowModal(false);
-        setShowThankYouMessage(true);
-        handleFinalizePurchase();
-    };
 
     const handleFinalizePurchase = () => {
         const code = generatePurchaseCode();
@@ -99,10 +149,11 @@ export const Cart = () => {
     const calculateTotal = () => {
         let total = 0;
         cartItems.forEach(item => {
-            total = item.price * item.quantity;
+            total += item.price * item.quantity; // Acumulando o total corretamente
         });
         return total.toFixed(2);
     };
+
 
     useEffect(() => {
         if (modalRef.current) {
@@ -183,7 +234,7 @@ export const Cart = () => {
                                                 </div>
                                                 <div className='textos'>
                                                     <h5>{item.name}</h5>
-                                                    <p>{item.complemento}</p>
+                                                    <p>{item.complement}</p>
                                                 </div>
                                             </div>
                                             <div className='parte2-product'>
@@ -197,6 +248,7 @@ export const Cart = () => {
                                                 </div>
                                                 <div className="price-product valorTotal">
                                                     <h5>Total</h5>
+                                                    {console.log(`Quantidade do item ${item.name}: ${item.quantity}`)}
                                                     <p style={{ color: 'orange' }}> R$ {(item.price * item.quantity).toFixed(2)}</p>
                                                 </div>
                                                 <button type='button' onClick={() => removeItem(index)} className="btn btn-primary deletar-product">X</button>
@@ -210,7 +262,7 @@ export const Cart = () => {
                             <button className="btn limpar-cart" onClick={clearCart} style={{ color: 'orange' }}>Limpar Carrinho</button>
                         </div>
                         <div className='principal-direito'>
-                            <div class="card card-right-side">
+                            <div class="card card-right-side cardPagamento">
                                 <div class="card-body">
                                     <h2>Pagamento</h2>
                                     <div className="Total-product-pagamento">
@@ -241,85 +293,90 @@ export const Cart = () => {
                                                 </div>
                                                 <div className="modal-body modal-bodyCart">
                                                     <form className="modal-bodyCartGrid">
-                                                        <div className="divCartM1">
+                                                        <div id="divCartM1" className="divCartM1">
                                                             <div className="cartForms">
                                                                 <label htmlFor="name" className='labelCart'>Nome</label>
                                                                 <input
                                                                     className='inputCart'
-                                                                    type="text" id="name" name="name" onChange={handleInputChange} value={formData.name} required />
+                                                                    type="text" id="name" name="name" onChange={handleInputChange} value={pedido.name} required
+                                                                    placeholder="Nome"
+                                                                />
                                                             </div>
                                                             <div className="cartForms">
                                                                 <label htmlFor="cep" className='labelCart'>CEP</label>
                                                                 <input
                                                                     className='inputCart'
-                                                                    type="text" id="cep" name="cep" onChange={handleInputChange} value={formData.cep} required />
+                                                                    type="text" id="cep" name="cep" onChange={handleInputChange} value={pedido.cep} required
+                                                                    placeholder="CEP"
+                                                                />
                                                             </div>
                                                             <div className="cartForms">
-                                                                <label htmlFor="street" className="labelCart">Rua</label>
+                                                                <label htmlFor="rua" className="labelCart">Rua</label>
                                                                 <input
-                                                                    className="inputCart" type="text" id="street" name="street" onChange={handleInputChange} value={formData.street} required />
+                                                                    className="inputCart"
+                                                                    type="text" id="rua" name="rua" onChange={handleInputChange} value={pedido.rua} required
+                                                                    placeholder="Rua"
+                                                                />
                                                             </div>
                                                             <div className="cartForms">
                                                                 <label htmlFor="paymentMethod" className="labelCart">Forma de Pagamento</label>
-                                                                <select id="paymentMethod" name="paymentMethod" onChange={handlePaymentMethodChange} value={formData.paymentMethod} required>
+                                                                <select
+                                                                    id="paymentMethod" name="paymentMethod" onChange={handleInputChange} required
+                                                                    className="inputCart"
+                                                                >
                                                                     <option value="">Selecione</option>
                                                                     <option value="credito">Crédito</option>
                                                                     <option value="debito">Débito</option>
                                                                 </select>
                                                             </div>
-                                                            <div className="cartForms">
-                                                                <label htmlFor="cardNumber" className="labelCart">Número do Cartão</label>
-                                                                <input
-                                                                    className="inputCart"
-                                                                    type="text" id="cardNumber" name="cardNumber" onChange={handleInputChange} value={formData.cardNumber} required />
-                                                            </div>
                                                         </div>
-                                                        <div className="divCartM2">
+                                                        <div id="divCartM2" className="divCartM2">
                                                             <div className="cartForms">
-                                                                <label htmlFor="phone" className="labelCart">Telefone</label>
+                                                                <label htmlFor="telefone" className="labelCart">Telefone</label>
                                                                 <input
                                                                     className="inputCart"
-                                                                    type="text" id="phone" name="phone" onChange={handleInputChange} value={formData.phone} required />
+                                                                    type="text" id="telefone" name="telefone" onChange={handleInputChange} value={pedido.telefone} required
+                                                                    placeholder="Telefone"
+                                                                />
                                                             </div>
                                                             <div className='cardParentInfo'>
                                                                 <div className="mb-4 cardInfo1">
-                                                                    <label htmlFor="state" className="labelCart">Estado</label>
+                                                                    <label htmlFor="estado" className="labelCart">Estado</label>
                                                                     <input
                                                                         className="inputCart"
-                                                                        type="text" id="state" name="state" onChange={handleInputChange} value={formData.state} required />
+                                                                        type="text" id="estado" name="estado" onChange={handleInputChange} value={pedido.state} required
+                                                                        placeholder="Estado"
+                                                                    />
                                                                 </div>
                                                                 <div className="mb-4 cardInfo1">
-                                                                    <label htmlFor="city" className="labelCart">Cidade</label>
+                                                                    <label htmlFor="cidade" className="labelCart">Cidade</label>
                                                                     <input
                                                                         className="inputCart"
-                                                                        type="text" id="city" name="city" onChange={handleInputChange} value={formData.city} required />
+                                                                        type="text" id="cidade" name="cidade" onChange={handleInputChange} value={pedido.cidade} required
+                                                                        placeholder="Cidade"
+                                                                    />
                                                                 </div>
                                                                 <div className="mb-4 cardInfo1">
-                                                                    <label htmlFor="number" className="labelCart">Número</label>
+                                                                    <label htmlFor="numero" className="labelCart">Número</label>
                                                                     <input
                                                                         className="inputCart"
-                                                                        type="text" id="number" name="number" onChange={handleInputChange} value={formData.number} required />
+                                                                        type="text" id="numero" name="numero" onChange={handleInputChange} value={pedido.numero} required
+                                                                        placeholder="Número"
+                                                                    />
                                                                 </div>
                                                             </div>
                                                             <div className="cartForms">
-                                                                <label htmlFor="complement" className="labelCart">Complemento</label>
+                                                                <label htmlFor="complemento" className="labelCart">complemento</label>
                                                                 <input
                                                                     className="inputCart"
-                                                                    type="text" id="complement" name="complement" onChange={handleInputChange} value={formData.complement} />
-                                                            </div>
-                                                            <div className="cartForms">
-                                                                <label htmlFor="securityCode" className="labelCart">Código de Segurança</label>
-                                                                <input
-                                                                    className="inputCart"
-                                                                    type="text" id="securityCode" name="securityCode" onChange={handleInputChange} value={formData.securityCode} required />
-                                                            </div>
-                                                            <div className="cartForms">
-                                                                <label htmlFor="expiryDate" className="labelCart">Data de Validade do Cartão</label>
-                                                                <input
-                                                                    className="inputCart" type="text" id="expiryDate" name="expiryDate" onChange={handleInputChange} value={formData.expiryDate} required />
+                                                                    type="text" id="complemento" name="complemento" onChange={handleInputChange} value={pedido.complemento}
+                                                                    placeholder="complemento"
+                                                                />
                                                             </div>
                                                         </div>
                                                     </form>
+
+
                                                 </div>
                                                 <div className="modal-footer modal-footerCart">
                                                     <div className="cartFooterTotal">
